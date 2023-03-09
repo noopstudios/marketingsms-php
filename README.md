@@ -1,4 +1,4 @@
-# marketingsms-notification-channel
+# marketingsms-php
 MarketingSMS for PHP
 
 # Licence
