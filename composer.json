@@ -1,0 +1,22 @@
+{
+    "name": "noopstudios/marketingsms-php",
+    "description": "An easy to use PHP Class for sending SMS with MarketingSMS API.",
+    "type": "library",
+    "require": {
+        "php": ">=7.4",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "license": "MIT License",
+    "autoload": {
+        "psr-4": {
+            "Noopstudios\\MarketingsmsPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Noop",
+            "email": "dev@noop.pt"
+        }
+    ]
+}
