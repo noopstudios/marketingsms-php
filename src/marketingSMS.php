@@ -159,6 +159,14 @@ class marketingSMS {
     }
 
     /**
+     * Get raw response from the last API call
+     * @return mixed
+     */
+    public function getResponseCode() {
+        return $this->_respondeCode;
+    }
+
+    /**
      * @param $infoArray
      * @return mixed
      * @throws \Exception
