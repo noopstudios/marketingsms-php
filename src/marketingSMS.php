@@ -22,6 +22,7 @@ class marketingSMS {
      * @var string
      */
     private $_apiToken;
+    private $_sandboxUrl;
 
     private $_obj;
     private $_response;
@@ -33,8 +34,9 @@ class marketingSMS {
      *
      * @param $apiToken
      */
-    public function __construct($apiToken) {
+    public function __construct($apiToken, $_sandboxUrl = null) {
         $this->_apiToken = $apiToken;
+        $this->_sandboxUrl = $_sandboxUrl;
     }
 
     /**
@@ -51,7 +53,11 @@ class marketingSMS {
             $paramsString = http_build_query($params);
         }
 
-        $apiUrl = self::API_URL;
+        if(empty($this->_sandboxUrl)){
+            $apiUrl = self::API_URL;
+        }else{
+            $apiUrl = $this->_sandboxUrl;
+        }
 
         $apiCall = $apiUrl . $function .'?'. $paramsString;
 
@@ -162,10 +168,3 @@ class marketingSMS {
     }
 
 }
-
-$marketingSMS = new marketingSMS('18|LKCF6Xt0cC2iNCSYQsgnfDNScmv1dusU1DnX4xuz');
-$_makeRequestResponse = $marketingSMS->sendMessage(['name' => 'name', 'message' => 'message', 'from' => 'from', 'phones' => '["+351968098228"]']);
-echo($_makeRequestResponse);
-echo("\n");
-echo($marketingSMS->getCleanResponse());
-echo("\n");
