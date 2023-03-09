@@ -7,10 +7,10 @@
         "ext-curl": "*",
         "ext-json": "*"
     },
-    "license": "MIT License",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Noopstudios\\MarketingsmsPhp\\": "src/"
+            "Noopstudios\\MarketingsmsPhp\\": "src"
         }
     },
     "authors": [
