@@ -14,7 +14,7 @@ class marketingSMS {
     /**
      * The API base URL.
      */
-    const API_URL = 'http://sms.noopstudios.pt:8888/api/v1/';
+    const API_URL = 'http://marketingsms.noop.pt/api/v1/';
 
     /**
      * API token.
@@ -30,7 +30,7 @@ class marketingSMS {
     private $_respondeCode;
 
     /**
-     * API Tokens can be generated at https://sms.noopstudios.pt:8888/ (as admin).
+     * API Tokens can be generated at main dashboard in API section (as admin).
      *
      * @param $apiToken
      */
