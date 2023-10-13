@@ -5,12 +5,14 @@
     "require": {
         "php": ">=7.4",
         "ext-curl": "*",
-        "ext-json": "*"
+        "ext-json": "*",
+        "phpunit/phpunit": "^10.4"
     },
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Noopstudios\\MarketingsmsPhp\\": "src"
+            "Noopstudios\\MarketingSMS\\": "src",
+            "Noopstudios\\MarketingSMS\\Tests\\": "tests"
         }
     },
     "authors": [

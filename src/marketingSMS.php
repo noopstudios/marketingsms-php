@@ -84,7 +84,10 @@ class marketingSMS {
 
         $this->_decodeResponse($httpcode, $jsonData);
 
-        return $jsonData;
+        return [
+            'data' => $jsonData,
+            'success' => ($httpcode == 200)
+        ];
     }
 
     /**
