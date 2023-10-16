@@ -1,5 +1,5 @@
 {
-    "name": "noopstudios/marketingsms-php",
+    "name": "noopstudios/marketingsms-notification-channel",
     "description": "An easy to use PHP Class for sending SMS with MarketingSMS API.",
     "type": "library",
     "require": {
