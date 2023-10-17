@@ -169,6 +169,10 @@ class marketingSMS {
         return $this->_respondeCode;
     }
 
+    public function getJsonObjResponse() {
+        return $this->_obj;
+    }
+
     /**
      * @param $infoArray
      * @return mixed
