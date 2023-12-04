@@ -14,7 +14,7 @@ class marketingSMS {
     /**
      * The API base URL.
      */
-    const API_URL = 'https://marketingsms.noop.pt/api/v1';
+    const API_URL = 'https://marketingsms.noop.pt/api/v1/';
 
     /**
      * API token.
